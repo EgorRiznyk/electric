@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЭлектроПро — Профессиональный электромонтаж</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon">⚡</span>
+        <span class="logo__text">ЭлектроПро</span>
+      </a>
+      <nav class="nav">
+        <a href="#services" class="nav__link">Услуги</a>
+        <a href="#calculator" class="nav__link">Калькулятор</a>
+        <a href="#form" class="nav__link">Заявка</a>
+        <a href="#contacts" class="nav__link">Контакты</a>
+      </nav>
+      <a href="#form" class="btn btn--header">Оставить заявку</a>
+      <button class="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <canvas class="hero__canvas" id="heroCanvas"></canvas>
+    <div class="container hero__inner">
+      <h1 class="hero__title">Профессиональный<br/><span class="hero__accent">электромонтаж</span></h1>
+      <p class="hero__subtitle">Проектирование, монтаж и обслуживание электрооборудования<br/>любой сложности в Днестровске и ПМР</p>
+      <div class="hero__actions">
+        <a href="#calculator" class="btn btn--primary">Рассчитать стоимость</a>
+        <a href="#form" class="btn btn--outline">Заказать звонок</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num" data-count="12">0</span>
+          <span class="stat__label">лет на рынке</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="850">0</span>
+          <span class="stat__label">выполненных проектов</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="98">0</span>
+          <span class="stat__label">% довольных клиентов</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Листайте вниз</span>
+      <div class="hero__scroll-mouse"><div class="hero__scroll-dot"></div></div>
+    </div>
+  </section>
+
+  <section class="services section" id="services">
+    <div class="container">
+      <h2 class="section__title">Наши услуги</h2>
+      <p class="section__subtitle">Полный спектр электромонтажных работ для дома и бизнеса</p>
+      <div class="services__grid">
+        <div class="service-card" data-delay="0">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64"><path d="M32 4L8 28h12v24h24V28h12L32 4z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M28 32v8m8-8v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="service-card__title">Электромонтаж</h3>
+          <p class="service-card__desc">Монтаж проводки, силовых линий, электрощитов и распределительных коробок любой сложности.</p>
+        </div>
+        <div class="service-card" data-delay="100">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="24" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M32 16v16l10 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="service-card__title">Автоматизация</h3>
+          <p class="service-card__desc">Умный дом, системы управления освещением, климат-контроль и автоматизация процессов.</p>
+        </div>
+        <div class="service-card" data-delay="200">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64"><path d="M12 52V20l20-12 20 12v32H12z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M24 36h16M24 28h16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="service-card__title">Проектирование</h3>
+          <p class="service-card__desc">Разработка проектной документации, схем электроснабжения и расчёт нагрузок.</p>
+        </div>
+        <div class="service-card" data-delay="300">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64"><path d="M8 36c0-8 16-24 24-24s24 16 24 24v4H8v-4z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M32 12V4M20 52c0 4 12 8 12 8s12-4 12-8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="service-card__title">Ремонт и диагностика</h3>
+          <p class="service-card__desc">Поиск неисправностей, ремонт электрооборудования, замена проводки и автоматов.</p>
+        </div>
+        <div class="service-card" data-delay="400">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64"><rect x="8" y="12" width="48" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M22 12v40M42 12v40M8 32h48" stroke="currentColor" stroke-width="2" stroke-dasharray="2 2"/></svg>
+          </div>
+          <h3 class="service-card__title">Видеонаблюдение</h3>
+          <p class="service-card__desc">Установка камер, систем контроля доступа, сигнализации и домофонов.</p>
+        </div>
+        <div class="service-card" data-delay="500">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64"><path d="M52 20c0-8-20-12-20-12s-20 4-20 12" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M12 20v24c0 8 20 12 20 12s20-4 20-12V20" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M12 32c0 8 20 12 20 12s20-4 20-12" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+          </div>
+          <h3 class="service-card__title">Заземление и молниезащита</h3>
+          <p class="service-card__desc">Устройство контуров заземления, молниеотводов, уравнивание потенциалов.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="calculator section" id="calculator">
+    <div class="container">
+      <h2 class="section__title">Калькулятор стоимости</h2>
+      <p class="section__subtitle">Рассчитайте примерную стоимость электромонтажных работ</p>
+      <div class="calc">
+        <div class="calc__form">
+          <div class="calc__group">
+            <label class="calc__label">Тип помещения</label>
+            <select class="calc__select" id="calcType">
+              <option value="0">Квартира-студия</option>
+              <option value="1">1-комнатная квартира</option>
+              <option value="2">2-комнатная квартира</option>
+              <option value="3">3-комнатная квартира</option>
+              <option value="4">Частный дом до 100 м²</option>
+              <option value="5">Частный дом 100–200 м²</option>
+              <option value="6">Офисное помещение</option>
+            </select>
+          </div>
+          <div class="calc__group">
+            <label class="calc__label">Площадь, м²</label>
+            <input type="range" class="calc__range" id="calcArea" min="15" max="500" value="50" />
+            <div class="calc__range-value"><span id="calcAreaValue">50</span> м²</div>
+          </div>
+          <div class="calc__group">
+            <label class="calc__label">Количество точек (розетки/выключатели)</label>
+            <input type="range" class="calc__range" id="calcPoints" min="5" max="100" value="20" />
+            <div class="calc__range-value"><span id="calcPointsValue">20</span> шт.</div>
+          </div>
+          <div class="calc__group">
+            <label class="calc__label">Дополнительные услуги</label>
+            <div class="calc__checkboxes">
+              <label class="calc__checkbox">
+                <input type="checkbox" id="extraSmart" />
+                <span>Умный дом</span>
+              </label>
+              <label class="calc__checkbox">
+                <input type="checkbox" id="extraCCTV" />
+                <span>Видеонаблюдение</span>
+              </label>
+              <label class="calc__checkbox">
+                <input type="checkbox" id="extraInternet" />
+                <span>Локальная сеть / WiFi</span>
+              </label>
+              <label class="calc__checkbox">
+                <input type="checkbox" id="extraGround" />
+                <span>Заземление</span>
+              </label>
+            </div>
+          </div>
+          <button class="btn btn--primary calc__btn" id="calcBtn">Рассчитать</button>
+        </div>
+        <div class="calc__result" id="calcResult">
+          <div class="calc__result-inner">
+            <div class="calc__result-label">Примерная стоимость работ</div>
+            <div class="calc__result-price">
+              <span class="calc__result-currency">р.</span>
+              <span class="calc__result-value" id="calcPrice">0</span>
+            </div>
+            <div class="calc__result-note">* Точная стоимость определяется после выезда специалиста</div>
+            <a href="#form" class="btn btn--primary">Оставить заявку</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section section" id="form">
+    <div class="container">
+      <div class="form-section__inner">
+        <div class="form-section__info">
+          <h2 class="section__title section__title--left">Оставьте заявку</h2>
+          <p class="section__subtitle section__subtitle--left">Заполните форму, и наш специалист свяжется с вами в течение 15 минут</p>
+          <ul class="form-section__features">
+            <li>Бесплатный выезд и оценка</li>
+            <li>Гарантия на все работы до 3 лет</li>
+            <li>Работаем с НДС и без НДС</li>
+            <li>Соблюдение сроков по договору</li>
+          </ul>
+        </div>
+        <form class="form" id="orderForm">
+          <div class="form__row">
+            <input type="text" class="form__input" placeholder="Ваше имя" required />
+            <input type="tel" class="form__input" placeholder="Номер телефона" required />
+          </div>
+          <div class="form__row">
+            <select class="form__select">
+              <option value="">Тип работ</option>
+              <option>Электромонтаж</option>
+              <option>Автоматизация</option>
+              <option>Проектирование</option>
+              <option>Ремонт и диагностика</option>
+              <option>Видеонаблюдение</option>
+              <option>Заземление</option>
+            </select>
+            <input type="text" class="form__input" placeholder="Адрес объекта" />
+          </div>
+          <textarea class="form__textarea" placeholder="Описание работ (необязательно)"></textarea>
+          <div class="form__footer">
+            <label class="form__checkbox">
+              <input type="checkbox" checked required />
+              <span>Согласен на обработку персональных данных</span>
+            </label>
+            <button type="submit" class="btn btn--primary">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts section" id="contacts">
+    <div class="container">
+      <h2 class="section__title">Контакты</h2>
+      <p class="section__subtitle">Свяжитесь с нами любым удобным способом</p>
+      <div class="contacts__grid">
+        <div class="contacts__info">
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-item__label">Телефон</div>
+              <a href="tel:+37377869115" class="contact-item__value">+373 778 69 115</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-item__label">Email</div>
+              <a href="mailto:egor.riznykhh@gmail.com" class="contact-item__value">egor.riznykhh@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-item__label">Адрес</div>
+              <div class="contact-item__value">г. Днестровск, ПМР</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="contact-item__label">Режим работы</div>
+              <div class="contact-item__value">Пн–Сб: 9:00–20:00, Вс: по записи</div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__map" id="map"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <a href="#" class="logo">
+          <span class="logo__icon">⚡</span>
+          <span class="logo__text">ЭлектроПро</span>
+        </a>
+        <p class="footer__desc">Профессиональные электромонтажные работы с гарантией качества. Работаем в Днестровске и ПМР с 2014 года.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__title">Услуги</h4>
+        <nav class="footer__nav">
+          <a href="#">Электромонтаж</a>
+          <a href="#">Автоматизация</a>
+          <a href="#">Проектирование</a>
+          <a href="#">Ремонт и диагностика</a>
+          <a href="#">Видеонаблюдение</a>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__title">Контакты</h4>
+        <p>+373 778 69 115</p>
+        <p>egor.riznykhh@gmail.com</p>
+        <p>г. Днестровск, ПМР</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 ЭлектроПро. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="successModal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <button class="modal__close">&times;</button>
+      <div class="modal__icon">✓</div>
+      <h3 class="modal__title">Спасибо за заявку!</h3>
+      <p class="modal__text">Мы свяжемся с вами в ближайшее время.</p>
+      <button class="btn btn--primary modal__btn">Хорошо</button>
+    </div>
+  </div>
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=ваш-api-ключ" type="text/javascript"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
