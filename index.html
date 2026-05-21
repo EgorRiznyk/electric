@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <title>ЭлектроПро — Профессиональный электромонтаж</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -193,7 +194,7 @@
         <form class="form" id="orderForm">
           <div class="form__row">
             <input type="text" class="form__input" placeholder="Ваше имя" required />
-            <input type="tel" class="form__input" placeholder="Номер телефона" required />
+            <input type="tel" class="form__input" placeholder="+373 777 00 000" required pattern="\+373\d{7,8}" title="Формат: +373XXXXXXXX" />
           </div>
           <div class="form__row">
             <select class="form__select">
@@ -207,7 +208,7 @@
             </select>
             <input type="text" class="form__input" placeholder="Адрес объекта" />
           </div>
-          <textarea class="form__textarea" placeholder="Описание работ (необязательно)"></textarea>
+          <textarea class="form__textarea" placeholder="Опишите работы (минимум 15 символов)" required minlength="15"></textarea>
           <div class="form__footer">
             <label class="form__checkbox">
               <input type="checkbox" checked required />

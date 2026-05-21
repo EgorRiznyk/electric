@@ -168,18 +168,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const calcPrice = document.getElementById('calcPrice');
   const calcBtn = document.getElementById('calcBtn');
 
-  const basePrices = [400, 500, 650, 800, 900, 1100, 700];
+  const basePrices = [80, 100, 130, 160, 180, 220, 140];
 
   function updateCalc() {
     const type = parseInt(calcType.value);
     const area = parseInt(calcArea.value);
     const points = parseInt(calcPoints.value);
-    const base = basePrices[type] || 500;
-    let price = base * area + points * 300;
-    if (document.getElementById('extraSmart').checked) price += 15000;
-    if (document.getElementById('extraCCTV').checked) price += 12000;
-    if (document.getElementById('extraInternet').checked) price += 8000;
-    if (document.getElementById('extraGround').checked) price += 10000;
+    const base = basePrices[type] || 100;
+    let price = base * area + points * 60;
+    if (document.getElementById('extraSmart').checked) price += 3000;
+    if (document.getElementById('extraCCTV').checked) price += 2500;
+    if (document.getElementById('extraInternet').checked) price += 1500;
+    if (document.getElementById('extraGround').checked) price += 2000;
     price = Math.round(price / 1000) * 1000;
     animateNumber(calcPrice, price);
   }
